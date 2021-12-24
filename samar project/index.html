@@ -1009,26 +1009,25 @@
         custom2[1].style.color = "white";
         custom1[1].style.color = "white";
         changeColor(h);
+        var s = 0;
+        var l = 0;
         function changeColor(h) {
             for (let i = 0; i < 3; i++) {
-                h[i].onmouseout = function () {
-                    if (h[i].onmouseout) {
-                        this.style.backgroundImage = "var(--gradient)";
-                        this.style.backgroundSize = "200%";
-                        icon[i].style.color = "white";
-                        custom1[i].style.color = "white";
-                        custom2[i].style.color = "white";
-
-                    }
-
+                h[i].onmouseleave = function () {
+                    s = i;
+                    this.style.backgroundImage = "var(--gradient)";
+                    this.style.backgroundSize = "200%";
+                    icon[i].style.color = "white";
+                    custom1[i].style.color = "white";
+                    custom2[i].style.color = "white";
                 }
                 h[i].onmouseover = function () {
-                    if (h[i].onmouseover) {
+                    l = i;
+                    if (l !== s) {
                         this.style.backgroundImage = "linear-gradient(white,white,white)";
                         icon[i].style.color = "white";
                         custom2[i].style.color = "white";
                         custom1[i].style.color = "white";
-
                     }
                     for (let n = 0; n < 3; n++) {
                         if (n !== i) {
