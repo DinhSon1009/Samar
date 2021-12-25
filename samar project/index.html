@@ -426,10 +426,12 @@
                 <span class="span">Choose Your Plan</span>
                 <h1 class="h1">Choose Your Plan</h1>
                 <div class="btn">
-                    <span class="monthly">MONTHLY</span>
-                    <span class="yearly">YEARLY</span>
+                    <span class="monthly" id="monthly" onclick="myFunction()">MONTHLY</span>
+                    <div id="empty"></div>
+                    <span class="yearly" id="yearly" onclick="myFunction1()">YEARLY</span>
 
                 </div>
+
             </div>
             <div class="plan__bottom">
                 <div class="plan__card">
@@ -1042,8 +1044,22 @@
         }
 
     </script>
+    <!-- BUTTON SCRIPT  -->
+    <script>
+        function myFunction1() {
+            document.getElementById("empty").style.transform = "translate(calc(100% - 8px),-50%)";
+            document.getElementById("monthly").style.color = "white";
+            document.getElementById("yearly").style.color = "#000";
 
 
+        }
+        function myFunction() {
+            document.getElementById("empty").style.transform = "translate(0,-50%";
+            document.getElementById("yearly").style.color = "white";
+            document.getElementById("monthly").style.color = "#000";
+
+        }
+    </script>
 
 
 
