@@ -543,20 +543,13 @@ button:hover {
 }
 .number__icon i {
   text-align: center;
-  /* color:white; */
   font-size: 45px;
   vertical-align: middle;
-  line-height: 80px;
-  /* background: transparent; */
-  /* color: transparent; */
   height: 45px;
   width: 45px;
   border-radius: 45px;
   line-height: 45px;
-  /* -webkit-text-stroke: 2px white; */
 
-  /* color:transparent; */
-  /* color:white; */
 }
 .number__content span {
   margin-right: 5px;
@@ -727,6 +720,7 @@ button:hover {
 }
 
 /* end test  */
+ 
 .portfolio__item img {
   width: 100%;
   height: 100%;
@@ -822,7 +816,6 @@ button:hover {
 .portfolio__item:hover .portfolio__info {
   bottom: 2%;
   opacity: 1;
-  /* transform: translateY(-50%) scale(1); */
 }
 
 @keyframes move {
@@ -839,6 +832,9 @@ button:hover {
     transform: rotate(1deg) translate(2px, 2px);
   }
 }
+ /* end porfolio  */
+
+
 /* start plan  */
 .plan {
   padding-top: 145px;
@@ -853,7 +849,6 @@ button:hover {
 .btn {
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
   background-image: linear-gradient(
     to right,
     #f55f8d 0,
@@ -862,8 +857,7 @@ button:hover {
   );
   display: flex;
   border-radius: 6px;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 0 40px;
   height: 50px;
   width: 235px;
   background-size: 200%;
@@ -884,10 +878,10 @@ button:hover {
   font-size: 14px;
   font-weight: 500;
   width: 50%;
-  line-height: 42px;
+  line-height: 50px;
   text-transform: uppercase;
   transition: all 1s;
-  height: 42px;
+  height: 50px;
   cursor: pointer;
 }
 #empty {
