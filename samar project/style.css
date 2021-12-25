@@ -732,7 +732,6 @@ button:hover {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr;
-  grid-template-rows: 430px 194px 282px;
   gap: 30px;
 }
 .portfolio__item::before {
