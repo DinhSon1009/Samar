@@ -897,6 +897,9 @@ button:hover {
   z-index: -1;
   transition: all 1s;
 }
+#yearly{
+  color:white;
+}
 .plan__bottom {
   display: flex;
   justify-content: space-between;
